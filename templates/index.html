@@ -1,13 +1,18 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Sensive Blog - Home</title>
-        <link rel="icon" href="/static/img/favicon.png" type="image/png" />
+        <link
+            rel="icon"
+            href="{% static 'img/favicon.png' %}"
+            type="image/png"
+        />
 
-        <link rel="stylesheet" href="/static/styles.min.css" />
+        <link rel="stylesheet" href="{% static 'styles.min.css' %}" />
     </head>
 
     <body>
@@ -18,7 +23,7 @@
                     <div class="container box_1620">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <a class="navbar-brand logo_h" href="index.html"
-                            ><img src="/static/img/logo.png" alt=""
+                            ><img src="{% static 'img/logo.png' %}" alt=""
                         /></a>
                         <button
                             class="navbar-toggler"
@@ -101,7 +106,7 @@
                                 <div class="blog__slide__img">
                                     <img
                                         class="card-img rounded-0"
-                                        src="/static/img/blog/blog-slider/blog-slide1.png"
+                                        src="{% static 'img/blog/blog-slider/blog-slide1.png' %}"
                                         alt=""
                                     />
                                 </div>
@@ -122,7 +127,7 @@
                                 <div class="blog__slide__img">
                                     <img
                                         class="card-img rounded-0"
-                                        src="/static/img/blog/blog-slider/blog-slide2.png"
+                                        src="{% static 'img/blog/blog-slider/blog-slide2.png' %}"
                                         alt=""
                                     />
                                 </div>
@@ -143,7 +148,7 @@
                                 <div class="blog__slide__img">
                                     <img
                                         class="card-img rounded-0"
-                                        src="/static/img/blog/blog-slider/blog-slide3.png"
+                                        src="{% static 'img/blog/blog-slider/blog-slide3.png' %}"
                                         alt=""
                                     />
                                 </div>
@@ -172,7 +177,7 @@
                                 <div class="thumb">
                                     <img
                                         class="img-fluid"
-                                        src="/static/img/blog/blog1.png"
+                                        src="{% static 'img/blog/blog1.png' %}"
                                         alt=""
                                     />
                                     <ul class="thumb-info">
@@ -222,7 +227,7 @@
                                 <div class="thumb">
                                     <img
                                         class="img-fluid"
-                                        src="/static/img/blog/blog2.png"
+                                        src="{% static 'img/blog/blog2.png' %}"
                                         alt=""
                                     />
                                     <ul class="thumb-info">
@@ -272,7 +277,7 @@
                                 <div class="thumb">
                                     <img
                                         class="img-fluid"
-                                        src="/static/img/blog/blog3.png"
+                                        src="{% static 'img/blog/blog3.png' %}"
                                         alt=""
                                     />
                                     <ul class="thumb-info">
@@ -322,7 +327,7 @@
                                 <div class="thumb">
                                     <img
                                         class="img-fluid"
-                                        src="/static/img/blog/blog4.png"
+                                        src="{% static 'img/blog/blog4.png' %}"
                                         alt=""
                                     />
                                     <ul class="thumb-info">
@@ -569,6 +574,6 @@
         </footer>
         <!--================ End Footer Area =================-->
 
-        <script src="/static/scripts.js"></script>
+        <script src="{% static 'scripts.js' %}"></script>
     </body>
 </html>
