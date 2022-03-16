@@ -13,7 +13,7 @@
       <div class="col-lg-8">
         <div class="main_blog_details">
           <img class="img-fluid" {% if post.image_url %} src="{{ post.image_url }}" {% else %}
-            src="{% static 'img/banner/blog.png' %}" {% endif %} alt="" />
+            src="{% static 'img/banner/blog.png' %}" {% endif %} alt="{{ post.slug }}" />
           <h4>
             {{ post.title }}
           </h4>
